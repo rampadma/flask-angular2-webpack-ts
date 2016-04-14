@@ -1,0 +1,8 @@
+.idea
+
+**/__pycache__/**
+**/*.pyc/**
+**/python3/**
+**/static/node_modules/**
+**/static/typings/**
+**/static/scripts/**

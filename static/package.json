@@ -1,0 +1,31 @@
+{
+  "name": "flask-angular2-webpack-ts",
+  "version":"1.0.0",
+  "description":"5 minute tutorial using flask angular2 webpack and typescript",
+  "scripts": {
+      "build": "webpack",
+      "start": "webpack-dev-server",
+      "tsc": "tsc",
+      "tsc:w": "tsc -w",
+      "typings": "typings",
+      "postinstall": "typings install"
+  },
+  "license": "ISC",
+  "devDependencies": {
+      "concurrently": "^2.0.0",
+      "ts-loader": "^0.7.2",
+      "typings":"^0.7.12",
+      "typescript": "^1.7.5",
+      "webpack": "^1.12.11",
+      "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+      "angular2": "2.0.0-beta.14",
+      "systemjs": "0.19.25",
+      "es6-shim": "^0.35.0",
+      "reflect-metadata": "0.1.2",
+      "rxjs": "5.0.0-beta.2",
+      "zone.js": "^0.6.6",
+      "bootstrap": "4.0.0-alpha.2"
+  }
+}

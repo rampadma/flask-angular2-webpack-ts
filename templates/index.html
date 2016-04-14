@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Personal Finance and Prosper!</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://v4-alpha.getbootstrap.com/examples/cover/cover.css" />
+
+    <style type="text/css">
+    body {
+        padding-top:0px;
+    }
+
+    body, html {
+        height:100%;
+    }
+
+    /* workaround modal-open padding issue */
+    body.modal-open {
+        padding-right:0 !important;
+    }
+
+
+    #sidebar {
+        padding-left:0;
+    }
+
+    /*
+    * Off Canvas at medium breakpoint
+    * --------------------------------------------------
+    */
+    @media screen and (max-width: 48em) {
+
+        .row-offcanvas {
+            position: relative;
+            -webkit-transition: all 0.25s ease-out;
+            -moz-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
+        }
+
+        .row-offcanvas-left
+        .sidebar-offcanvas {
+            left: -33%;
+        }
+
+        .row-offcanvas-left.active {
+            left: 33%;
+        }
+
+        .sidebar-offcanvas {
+            position: absolute;
+            top: 0;
+            width: 33%;
+            height: 100%;
+        }
+    }
+
+    /*
+    * Off Canvas wider at sm breakpoint
+    * --------------------------------------------------
+    */
+    @media screen and (max-width: 34em) {
+        .row-offcanvas-left
+        .sidebar-offcanvas {
+            left: -45%;
+        }
+
+        .row-offcanvas-left.active {
+            left: 45%;
+        }
+
+        .sidebar-offcanvas {
+            width: 45%;
+        }
+    }
+
+
+    /* responsive nav stacked liked 3.x */
+    @media(max-width:34em) {
+        .navbar .navbar-brand {
+            float:none;
+            display: block;
+        }
+        .navbar .navbar-nav>.nav-item {
+            float: none;
+            margin-left: .1rem;
+        }
+        .navbar .navbar-nav {
+            float:none !important;
+        }
+    }
+
+    .card {
+        overflow:hidden;
+    }
+
+    .card-block .rotate {
+        z-index: 8;
+        float: right;
+        height: 100%;
+    }
+
+    .card-block .rotate i {
+        color: rgba(20, 20, 20, 0.15);
+        position: absolute;
+        left: 0;
+        left: auto;
+        right: -10px;
+        bottom: 0;
+        display: block;
+        -webkit-transform: rotate(-44deg);
+        -moz-transform: rotate(-44deg);
+        -o-transform: rotate(-44deg);
+        -ms-transform: rotate(-44deg);
+        transform: rotate(-44deg);
+    }
+    </style>
+</head>
+
+<body>
+
+    <flask-app></flask-app>
+    <script src="../static/scripts/dependencies.bundle.js"></script>
+    <script src="../static/scripts/app.bundle.js"></script>
+</body>
+</html>
